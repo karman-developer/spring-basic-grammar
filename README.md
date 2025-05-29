@@ -19,6 +19,15 @@
 3. Service を作る（ビジネス処理、今回は保存だけ）
 4. Controller を作る（APIの入り口）
 
+## 出てくるアノテーション
+|アノテーション|説明                                                     
+|------------------------|--------------------------------------------------------------
+| @Entity                | DBのテーブルとマッピングされるクラスであることを示す（JPA） 
+| @Data                  | getter/setter, toString, equals, hashCode を自動生成（Lombok） 
+| @NoArgsConstructor     | 引数なしコンストラクタを自動生成（Lombok） 
+| @AllArgsConstructor    | 全てのフィールドを引数に持つコンストラクタを自動生成（Lombok） 
+| @Builder               | Builderパターンのメソッドを生成（User.builder()...）（Lombok） 
+
 ### アノテーションが便利？
 - **自分で全部書かなくて済む**
 例：getter/setterやコンストラクタを手動で書く代わりに、@Dataや@NoArgsConstructorを付けるだけで自動生成される
