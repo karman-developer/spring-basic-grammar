@@ -27,6 +27,12 @@
 ビジネスロジック層（UserService）
 4. Controller を作る（APIの入り口）
 APIコントローラー（UserController）
+5. DB接続情報記載
+6. curl -Uri http://localhost:8080/users `
+     -Method Post `
+     -Headers @{ "Content-Type" = "application/json" } `
+     -Body '{ "name": "Taro", "age": 25 }'
+
 
 ## 出てくるアノテーション
 |アノテーション|説明                                                     
